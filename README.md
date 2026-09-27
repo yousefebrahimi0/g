@@ -1,19 +1,9 @@
 # G pitch deck
 
 ## For the event technician
-Open this page in Chrome or Edge, then press **F** for fullscreen:
+Open this page in Chrome or Edge, then press **F** for fullscreen
 
-https://yousef.uk/g/
-
-If the venue has no internet, download `greenrah-pitch-standalone.html` from the repo and double click it. That one file contains the whole deck.
-
-## Open it
-
-| File | Use it when |
-|---|---|
-| `greenrah-pitch-standalone.html` | **On stage.** One file with everything inside. Copy it to any laptop and double click. |
-| `index.html` | Editing, and the page GitHub Pages serves. |
-| `GreenRah-pitch.pdf` | Backup. 15 pages, light theme, every reveal visible. |
+If the venue has no internet, download `html` from the repo and double click it. That one file contains the whole deck.
 
 Use a current Chrome, Edge, Firefox, or Safari. Press **F** for fullscreen.
 
