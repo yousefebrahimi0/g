@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="dark light">
+  <title>GreenRah: The cooler way. Pitch</title>
+  <link rel="icon" href="assets/greenrah-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Letterboxed viewport; the 1920x1080 stage is scaled to fit -->
+  <div id="viewport" class="viewport">
+    <main id="stage" class="stage stage--main" aria-roledescription="presentation" aria-label="GreenRah pitch"></main>
+  </div>
+
+  <!-- Mouse / touch toolbar (auto-hides with the cursor) -->
+  <nav id="toolbar" class="toolbar" aria-label="Presentation controls"></nav>
+
+  <!-- Black screen (B or .) -->
+  <div id="blackout" class="blackout" hidden></div>
+
+  <!-- Screen reader announcement of slide changes -->
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript><p class="noscript">This presentation needs JavaScript. Open greenrah-pitch-standalone.html in a current browser.</p></noscript>
+
+  <!-- Order matters: content and data first, engine last -->
+  <script src="js/content.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/geo-data.js"></script>
+  <script src="js/city-model.js"></script>
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
