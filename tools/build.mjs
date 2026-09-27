@@ -1,8 +1,8 @@
-// Builds greenrah-pitch-standalone.html: one file with CSS, JS, fonts, icons,
+// Builds g.html: one file with CSS, JS, fonts, icons,
 // map data and images inlined (base64). Works offline on any laptop.
 //
 //   node tools/build.mjs          build the standalone HTML
-//   node tools/build.mjs --pdf    also print GreenRah-pitch.pdf with headless Chrome or Edge
+//   node tools/build.mjs --pdf    also print f/g.pdf with headless Chrome or Edge
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -45,7 +45,7 @@ if (external.length || cssExternal.length) {
   process.exit(1);
 }
 
-const out = path.join(root, 'greenrah-pitch-standalone.html');
+const out = path.join(root, 'g.html');
 fs.writeFileSync(out, html);
 console.log(`standalone: ${(fs.statSync(out).size / 1024).toFixed(0)} KB -> ${out}`);
 
@@ -60,7 +60,7 @@ if (process.argv.includes('--pdf')) {
   ];
   const browser = candidates.find((c) => fs.existsSync(c));
   if (!browser) { console.error('No Chrome or Edge found for PDF export.'); process.exit(1); }
-  const pdf = path.join(root, 'GreenRah-pitch.pdf');
+  const pdf = path.join(root, 'f', 'g.pdf');
   execFileSync(browser, ['--headless=new', '--disable-gpu', '--no-pdf-header-footer', '--virtual-time-budget=8000',
     `--print-to-pdf=${pdf}`, pathToFileURL(out).href + '#/1'], { stdio: 'inherit' });
   console.log(`pdf: ${pdf}`);

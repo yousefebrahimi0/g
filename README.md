@@ -3,7 +3,7 @@
 ## For the event technician
 Open this page in Chrome or Edge, then press **F** for fullscreen
 
-If the venue has no internet, download `html` from the repo and double click it. That one file contains the whole deck.
+If the venue has no internet, download `g.html` from the repo and double click it. That one file contains the whole deck.
 
 Use a current Chrome, Edge, Firefox, or Safari. Press **F** for fullscreen.
 

@@ -1,4 +1,4 @@
-// Screenshots the dark deck (all reveals visible) and builds GreenRah-pitch.pptx
+// Screenshots the dark deck (all reveals visible) and builds f/g.pptx
 // with speaker notes. Run after tools/build.mjs so the standalone file is current.
 //
 //   node tools/export-pptx.mjs
@@ -10,7 +10,7 @@ import { pathToFileURL } from 'node:url';
 import PptxGenJS from 'pptxgenjs';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..');
-const html = path.join(root, 'greenrah-pitch-standalone.html');
+const html = path.join(root, 'g.html');
 const candidates = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
   'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
@@ -136,7 +136,7 @@ shots.forEach((buf, i) => {
   if (notes[i]) slide.addNotes(notes[i]);
 });
 
-const out = path.join(root, 'GreenRah-pitch.pptx');
+const out = path.join(root, 'f', 'g.pptx');
 await pptx.writeFile({ fileName: out });
 console.log('pptx:', out);
 try { fs.rmSync(userDir, { recursive: true, force: true }); } catch { /* temp profile */ }
