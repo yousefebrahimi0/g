@@ -8,7 +8,7 @@ No internet needed once the files are on the laptop. No CDNs, no web fonts from 
 
 Open this page in Chrome or Edge, then press **F** for fullscreen:
 
-https://yousefebrahimi0.github.io/greenrah-pitch/
+https://yousef.uk/greenrah-pitch/
 
 If the venue has no internet, download `greenrah-pitch-standalone.html` from the repo and double click it. That one file contains the whole deck.
 
